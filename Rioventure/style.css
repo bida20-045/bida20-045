@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* for iphone 6/7/8 plus*/
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #000183;
+  line-height: 1.6;
+}
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkorange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: antiquewhite;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+#btnScrollToTop:active {
+  background: orangered;
+}
+.navbar {
+  width: 90.3%;
+  padding: 0 20px;
+  display: flex;
+  background: #000183;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: ghostwhite;
+}
+ul li {
+  float: left;
+  width: 100px;
+  height: 70px;
+  line-height: 40px;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: ghostwhite;
+  display: block;
+}
+.active,
+.navbar ul li:hover {
+  background-color: #009688;
+  border-radius: 3px;
+}
+.active {
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #2ab9d8;
+}
+#showcase {
+  background-image: url("../IMG/pexels-flickr-155249\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+#showcase p {
+  font-size: 20px;
+}
+#showcase .button {
+  font-size: 18px;
+  text-decoration: none;
+  color: whitesmoke;
+  border: #009688 5px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#showcase .button:hover {
+  background: #009688;
+}
+.footer {
+  height: 15vh;
+  background-color: #000183;
+}
+.inner-footer {
+  margin: 0;
+  padding: 0;
+}
+.fa {
+  padding: 0;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px 5px;
+  position: relative;
+  top: 25px;
+  left: 100px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.outer-footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: cornflowerblue;
+}
+/*ipad (held vertically)*/
+@media only screen and (min-width: 768px) {
+  .navbar {
+    width: 95%;
+  }
+  ul li {
+    width: 200px;
+    height: 40px;
+  }
+  .fa {
+    padding: 20px;
+    margin: 8px 5px;
+    position: relative;
+    top: 5px;
+    left: 195px;
+  }
+}
+/*ipad (held horizontally)*/
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    width: 96%;
+  }
+  ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .fa {
+    left: 285px;
+  }
+}
+/*Laptop (HP 250 g7)*/
+@media only screen and (min-width: 1366px) {
+  .navbar {
+    width: 97%;
+  }
+  .fa {
+    left: 495px;
+  }
+}

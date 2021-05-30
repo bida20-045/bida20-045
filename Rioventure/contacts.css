@@ -1,0 +1,338 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* for iphone 6/7/8 plus*/
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkorange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: antiquewhite;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+#btnScrollToTop:active {
+  background: orangered;
+}
+.navbar {
+  width: 90.3%;
+  padding: 0 20px;
+  display: flex;
+  background: #000183;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000183;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: ghostwhite;
+}
+ul li {
+  float: left;
+  width: 100px;
+  height: 70px;
+  line-height: 40px;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: ghostwhite;
+  display: block;
+}
+.active,
+.navbar ul li:hover {
+  background-color: #009688;
+  border-radius: 3px;
+}
+.active {
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #2ab9d8;
+}
+
+.main-events h1 {
+  color: #000183;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.main-events p {
+  padding: 10px 80px;
+}
+.main-events h2 {
+  padding: 20px 80px;
+  padding-bottom: 0px;
+  border-bottom: 3px solid #000183;
+  background-color: lightgreen;
+  font-size: 15px;
+}
+.container {
+  padding: 20px 150px;
+  padding-left: 0px;
+}
+.container img {
+  width: 350px;
+  height: 200px;
+  padding-left: 20px;
+}
+.container iframe {
+  width: 400px;
+  height: 200px;
+  border-style: none;
+}
+.event1 p {
+  padding: 20px 80px;
+  padding-top: 0px;
+}
+.container2 {
+  padding: 20px 28px;
+}
+.container2 img {
+  width: 350px;
+  height: 200px;
+}
+.container3 img {
+  padding: 20px 28px;
+  width: 350px;
+  height: 200px;
+}
+.container4 {
+  padding: 5px;
+}
+.container4 img {
+  padding: 20px 28px;
+  width: 350px;
+  height: 200px;
+}
+.container4 p {
+  width: 300px;
+  padding-left: 23px;
+}
+.container5 {
+  padding: 5px;
+}
+.container5 img {
+  width: 400px;
+  height: 200px;
+}
+.Upcoming h1 {
+  color: #000183;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  border-top: skyblue 3px solid;
+}
+.Events {
+  border: skyblue 3px solid;
+}
+.Upcoming p {
+  padding: 20px 80px;
+  padding-top: 0px;
+  color: #cb2027;
+  text-align: center;
+}
+.footer {
+  height: 15vh;
+  background-color: #000183;
+}
+.inner-footer {
+  margin: 0;
+  padding: 0;
+}
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px 5px;
+  position: relative;
+  top: 25px;
+  left: 100px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.outer-footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: cornflowerblue;
+}
+/*ipad (held vertically)*/
+@media only screen and (min-width: 768px) {
+  #btnScrollToTop {
+    right: 30px;
+  }
+  .navbar {
+    width: 95%;
+  }
+  .main-events p {
+    padding-left: 90px;
+  }
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  .event1 p {
+    padding-left: 80px;
+  }
+  .container iframe {
+    padding-left: 10px;
+  }
+  .container2 {
+    padding: 20px 130px;
+  }
+
+  .container2 img {
+    padding-left: 5px;
+    width: 500px;
+    height: 350px;
+  }
+  .container3 img {
+    padding: 20px 200px;
+    padding-left: 135px;
+    width: 500px;
+    height: 350px;
+  }
+  .container4 {
+    padding: 20px 100px;
+    padding-left: 180px;
+  }
+  .container4 p {
+    padding-left: 30px;
+  }
+  .container5 img {
+    padding-left: 130px;
+    width: 500px;
+    height: 350px;
+  }
+  .fa {
+    padding: 20px;
+    margin: 8px 5px;
+    position: relative;
+    top: 5px;
+    left: 185px;
+  }
+}
+/*ipad (held horizontally)*/
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    width: 96%;
+  }
+  .container {
+    padding-left: 150px;
+  }
+  .container3 img {
+    padding: 20px 250px;
+  }
+  .container2 {
+    padding: 20px 250px;
+  }
+  .container4 {
+    display: flex;
+  }
+
+  .container5 img {
+    padding-left: 250px;
+  }
+
+  .fa {
+    left: 300px;
+  }
+}
+/*Laptop (HP 250 g7)*/
+@media only screen and (min-width: 1366px) {
+  .main-events h2 {
+    font-size: 20px;
+  }
+  #btnScrollToTop {
+    right: 10px;
+  }
+  .navbar {
+    width: 97%;
+  }
+  .Events h1 {
+    font-size: 50px;
+  }
+  .fa {
+    left: 495px;
+  }
+  ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .container {
+    padding-left: 300px;
+  }
+  .container iframe {
+    border: 0px;
+  }
+  .event2 img {
+    width: 900px;
+    height: 600px;
+    padding: 0px 0px;
+  }
+  .container3 img {
+    width: 1000px;
+    height: 555px;
+    padding: 20px 170px;
+  }
+  .container4 {
+    display: flex;
+    padding: 20px 80px;
+  }
+  .container4 img {
+    width: 500px;
+    height: 300px;
+  }
+  .container4 p {
+    width: 500px;
+    padding-left: 70px;
+  }
+  .container5 {
+    display: flex;
+    padding: 20px 80px;
+  }
+  .container5 img {
+    width: 500px;
+    height: 333px;
+  }
+}

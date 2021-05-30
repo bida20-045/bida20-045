@@ -1,0 +1,309 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* for iphone 6/7/8 plus*/
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: darkorange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: antiquewhite;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+#btnScrollToTop:active {
+  background: orangered;
+}
+.navbar {
+  width: 90.3%;
+  padding: 0 20px;
+  display: flex;
+  background: #000183;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000183;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: ghostwhite;
+}
+ul li {
+  float: left;
+  width: 100px;
+  height: 70px;
+  line-height: 40px;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: ghostwhite;
+  display: block;
+}
+.active,
+.navbar ul li:hover {
+  background-color: #009688;
+  border-radius: 3px;
+}
+.active {
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid #2ab9d8;
+}
+
+h1 {
+  color: #000183;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.container p {
+  padding-top: 10px;
+  width: 400px;
+  height: 400px;
+}
+.map {
+  padding: 5px;
+  width: 400px;
+  height: 350px;
+  border: 0;
+}
+.About {
+  border: skyblue 3px solid;
+}
+.About p {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.city_info {
+  border-bottom: skyblue 3px solid;
+}
+.img_1 {
+  width: 90%;
+  height: 200px;
+  padding: 5px 20px;
+  padding-top: 0px;
+}
+.container2 p {
+  padding: 50px;
+  padding-left: 10px;
+}
+.history h2 {
+  padding-left: 50px;
+  border-bottom: 3px solid #000183;
+  background-color: lightgreen;
+  font-size: 15px;
+}
+.facts {
+  border-top: skyblue 3px solid;
+}
+.facts img {
+  width: 98%;
+  height: 200px;
+  padding: 10px;
+  padding-left: 5px;
+}
+.img_2 {
+  width: 600px;
+  height: 400px;
+}
+.container_3 .para_1 {
+  padding: 50px;
+}
+.footer {
+  height: 15vh;
+  background-color: #000183;
+}
+.inner-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px 5px;
+  position: relative;
+  top: 25px;
+  left: 100px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.outer-footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  background-color: cornflowerblue;
+}
+/*ipad (held vertically)*/
+@media only screen and (min-width: 768px) {
+  .navbar {
+    width: 95%;
+  }
+  .container {
+    display: flex;
+  }
+  .map {
+    padding: 10px;
+    width: 400px;
+    height: 350px;
+    border: 0;
+  }
+  .img_1 {
+    width: 70%;
+    height: 400px;
+    padding: 15px;
+    padding-left: 125px;
+  }
+  .facts img {
+    width: 98%;
+    height: 450px;
+    padding: 10px;
+    padding-left: 5px;
+  }
+  .fa {
+    padding: 20px;
+    margin: 8px 5px;
+    position: relative;
+    top: 5px;
+    left: 185px;
+  }
+}
+/*ipad (held horizontally)*/
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    width: 96%;
+  }
+  .img_1 {
+    padding: 15px;
+    padding-left: 150px;
+  }
+  .fa {
+    left: 300px;
+  }
+}
+/*Laptop (HP 250 g7)*/
+@media only screen and (min-width: 1366px) {
+  .navbar {
+    width: 97%;
+  }
+  #showcase {
+    background-image: url("file:///C:/Users/bida20-045/OneDrive%20-%20Botswana%20Accountancy%20College/WMD%20FINAL%20WEB%20DEV/IMG/blue.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .fa {
+    left: 495px;
+  }
+  ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .About h1 {
+    font-size: 50px;
+  }
+  .container p {
+    padding: 50px;
+    width: 400px;
+    height: 100px;
+  }
+  .map {
+    padding: 50px;
+    width: 600px;
+    height: 500px;
+  }
+  .container2 {
+    display: flex;
+  }
+  .container2 p {
+    width: 500px;
+  }
+
+  .facts img {
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    padding-left: 100px;
+  }
+  .img_2 {
+    width: 600px;
+    height: 400px;
+  }
+  .container_3 {
+    display: flex;
+  }
+  .container_3 .para_1 {
+    padding: 50px;
+  }
+  .history h2 {
+    font-size: 20px;
+  }
+  .container2 p {
+    padding: 50px;
+  }
+  .About p {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+  }
+  .container5 {
+    display: flex;
+  }
+  .container5 p {
+    padding: 50px 60px;
+  }
+  .container6 {
+    padding: 30px 300px;
+    display: flex;
+  }
+  .container6 p {
+    padding: 50px 60px;
+  }
+}
